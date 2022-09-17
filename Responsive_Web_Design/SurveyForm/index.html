@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Open Source Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="title">Open Source Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the community</p>
+        <form action='https://opensource.org' id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name">Name<input id="name" class="full-width-input" name="name" type="text"
+                        placeholder="Enter your name" required /></label>
+                <label id="email-label" for="email">Email<input id="email" class="full-width-input" name="email"
+                        type="email" placeholder="Enter your email" required /></label>
+                <label id="number-label" for="number">Age (optional): <input id="number" class="full-width-input"
+                        type="number" min="18" max="120" placeholder="Enter your age"></label>
+                <label for="referrer">Which option best describes your current role?
+                    <select id="dropdown" name="referrer">
+                        <option value="">(Select current role)</option>
+                        <option value="1">Student</option>
+                        <option value="2">Full Time Job</option>
+                        <option value="3">Full Time Learner</option>
+                        <option value="4">Prefer not to say</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label>Would you recommend Open Source to a friend?
+                    <label for="definitely"><input id="definitely" type="radio" name="recommend" value="0" class="inline"/>
+                        Definitely</label>
+                    <label for="may-be"><input id="may-be" type="radio" name="recommend" value="1" class="inline" /> Maybe</label>
+                    <label for="not-sure"><input id="not-sure" type="radio" name="recommend" value="2" class="inline" /> Not
+                        sure</label>
+                </label>
+                <label for="features">What do you like about Open Source?
+                    <select id="dropdown" name="features">
+                        <option value="">(Select an option)</option>
+                        <option value="1">Challenges</option>
+                        <option value="2">Projects</option>
+                        <option value="3">Community</option>
+                        <option value="4">Collaboration</option>
+                        <option value="5">Other</option>
+                    </select>
+                </label>
+                <label>
+                    What would you like to contribute in Open Source?
+                    <span class="clue">(Check all that apply)</span>
+                </label>
+                <label>
+                    <input name="why-contribute" value="front-end" type="checkbox"
+                        class="input-checkbox inline">Front-end
+                    Skills</label>
+                <label>
+                    <input name="why-contribute" value="back-end" type="checkbox" class="input-checkbox inline">Back-end
+                    Skills</label>
+                <label>
+                    <input name="why-contribute" value="soft-skills" type="checkbox"
+                        class="input-checkbox">Soft-Skills</label>
+                <label>
+                    <input name="why-contribute" value="build-network" type="checkbox"
+                        class="input-checkbox inline">Build
+                    Network</label>
+                <label>
+                    <input name="why-contribute" value="get-mentorship" type="checkbox"
+                        class="input-checkbox inline">Get
+                    Mentorship</label>
+                <label for="suggestion">Any comments or suggestions?
+                    <textarea id="suggestion" name="suggestion" rows="3" cols="30"
+                        placeholder="Enter your comment here..."></textarea>
+                </label>
+                <label for="terms-and-conditions" name="terms-and-conditions">
+                    <input id="terms-and-conditions" value="terms-and-conditions" type="checkbox" required name="terms-and-conditions"
+                        class="inline" /> I accept the <a href="https://opensource.org/ToS/">terms and conditions</a>
+                </label>
+            </fieldset>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit" />
+        </form>
+    </div>
+</body>
+
+</html>

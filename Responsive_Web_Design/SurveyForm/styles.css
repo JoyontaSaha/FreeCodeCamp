@@ -1,0 +1,95 @@
+body {
+    background: var(--color-darkblue);
+    background-image: linear-gradient(115deg,
+            rgba(58, 58, 158, 0.8),
+            rgba(136, 136, 206, 0.7)),
+        url(https://www.openproject.org/blog/images/2020/07/why-open-source-e39c9b37.webp);
+    color: #FFFFFF;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h1,
+#description {
+    text-align: center;
+    margin: 15px 0;
+}
+
+#description {
+    font-style: italic;
+    font-weight: 200;
+}
+
+.container {
+    width: 100%;
+
+}
+
+form {
+    background: rgba(27, 27, 50, 0.8);
+    width: 600px;
+    height: auto;
+    min-width: 300px;
+    max-width: 800px;
+    margin: auto;
+    padding-bottom: 20px;
+    border-radius: 4px;
+}
+
+fieldset {
+    border: none;
+    margin: auto 10px;
+}
+
+.full-width-input,
+select,
+textarea {
+    width: 100%;
+    height: 25px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.full-width-input:active,
+.full-width-input:focus,
+select:active,
+select:focus,
+textarea:active,
+textarea:focus 
+ {
+    outline: 1px solid rgb(135, 206, 235);
+ }
+
+inline {
+    width: auto;
+}
+
+label {
+    display: block;
+    margin: 20px 0;
+}
+
+a {
+    color: white;
+}
+
+input[type="submit"] {
+    width: 80%;
+    height: 35px;
+    display: block;
+    margin : auto;
+    background-color: #00801c;
+    color: white;
+    font-weight: 400;
+    border-radius: 4px;
+    border: none;
+}
